@@ -2,22 +2,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sahifa 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-15 18:45+0200\n"
-"PO-Revision-Date: 2013-06-15 08:56+0700\n"
+"POT-Creation-Date: 2013-06-15 18:59+0700\n"
+"PO-Revision-Date: 2013-06-15 19:03+0700\n"
 "Last-Translator: Fouad Badawy <fouad@mo3aser.com>\n"
 "Language-Team: Tielabs <info@tielabs.com>\n"
+"Language: en_EG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: gettext;gettext_noop;_e;__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"Language: en_EG\n"
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:6 ../loop.php:3 ../page.php:7
+#: ../404.php:6 ../loop.php:3 ../page.php:7 ../single.php:9
+#: ../template-authors.php:12 ../template-blog.php:12 ../template-feed.php:12
+#: ../template-login.php:12 ../template-restrict.php:12
+#: ../template-sitemap.php:12 ../template-tags.php:12
+#: ../template-timeline.php:12 ../includes/breadcrumbs.php:100
 msgid "Not Found"
 msgstr "Không tìm thấy"
 
@@ -29,19 +33,20 @@ msgstr ""
 "Rất tiếc là không tìm thấy bài viết nào phù hợp với tiêu chí của bạn. Hay "
 "thử lại với các từ khóa khác."
 
-#: ../404.php:13
+#: ../404.php:13 ../template-sitemap.php:42
 msgid "Pages"
 msgstr "Số trang"
 
-#: ../404.php:18
+#: ../404.php:18 ../template-sitemap.php:47
 msgid "Categories"
 msgstr ""
 
-#: ../404.php:23
+#: ../404.php:23 ../template-sitemap.php:52
+#: ../includes/widgets/widget-tabbed.php:21
 msgid "Tags"
 msgstr ""
 
-#: ../404.php:35
+#: ../404.php:35 ../template-sitemap.php:64
 msgid "Authors"
 msgstr "Các tác giả"
 
@@ -64,44 +69,52 @@ msgstr ""
 msgid "Blog Archives"
 msgstr ""
 
-#: ../author.php:9
+#: ../author.php:9 ../includes/breadcrumbs.php:95
 #, php-format
 msgid "Author Archives: %s"
 msgstr ""
 
-#: ../author.php:12 ../category.php:10
+#: ../author.php:12 ../category.php:10 ../tag.php:11
 msgid "Feed Subscription"
 msgstr ""
 
-#: ../author.php:27
+#: ../author.php:27 ../template-authors.php:54
+#: ../functions/theme-functions.php:219 ../functions/theme-functions.php:1182
 msgid " 's site"
 msgstr ""
 
-#: ../author.php:30
+#: ../author.php:30 ../template-authors.php:57
+#: ../functions/theme-functions.php:222 ../functions/theme-functions.php:1185
 msgid "  on Twitter"
 msgstr ""
 
-#: ../author.php:33
+#: ../author.php:33 ../template-authors.php:60
+#: ../functions/theme-functions.php:225 ../functions/theme-functions.php:1188
 msgid "  on Facebook"
 msgstr ""
 
-#: ../author.php:36
+#: ../author.php:36 ../template-authors.php:63
+#: ../functions/theme-functions.php:228 ../functions/theme-functions.php:1191
 msgid "  on Google+"
 msgstr ""
 
-#: ../author.php:39
+#: ../author.php:39 ../template-authors.php:66
+#: ../functions/theme-functions.php:231 ../functions/theme-functions.php:1194
 msgid "  on Linkedin"
 msgstr ""
 
-#: ../author.php:42
+#: ../author.php:42 ../template-authors.php:69
+#: ../functions/theme-functions.php:234 ../functions/theme-functions.php:1197
 msgid "  on Flickr"
 msgstr ""
 
-#: ../author.php:45
+#: ../author.php:45 ../template-authors.php:72
+#: ../functions/theme-functions.php:237 ../functions/theme-functions.php:1200
 msgid "  on YouTube"
 msgstr ""
 
-#: ../author.php:48
+#: ../author.php:48 ../template-authors.php:75
+#: ../functions/theme-functions.php:240 ../functions/theme-functions.php:1203
 msgid "  on Pinterest"
 msgstr ""
 
@@ -137,7 +150,7 @@ msgstr "Các bình luận mới hơn <span class=\"meta-nav\">&rarr;</span>"
 
 #: ../comments.php:34
 msgid "Comments are closed."
-msgstr "Không cho phép bình luận."
+msgstr "Bình luận đã bị khóa."
 
 #: ../comments.php:46
 msgid "Name"
@@ -194,20 +207,15 @@ msgstr "Gửi bình luận"
 msgid "Scroll To Top"
 msgstr "Chuyển lên đầu"
 
-#: ../header.php:13
-#, php-format
-msgid "Page %s"
-msgstr "Trang %s"
-
-#: ../header.php:39
+#: ../header.php:30
 msgid "Search"
 msgstr "Tìm kiếm"
 
-#: ../header.php:40
+#: ../header.php:31
 msgid "Search..."
 msgstr "Tìm kiếm..."
 
-#: ../header.php:74
+#: ../header.php:65
 msgid "Random Article"
 msgstr ""
 
@@ -215,7 +223,10 @@ msgstr ""
 msgid "You can use Homepage builder to build your homepage"
 msgstr ""
 
-#: ../loop.php:5 ../page.php:9
+#: ../loop.php:5 ../page.php:9 ../single.php:11 ../template-authors.php:14
+#: ../template-blog.php:14 ../template-feed.php:14 ../template-login.php:14
+#: ../template-restrict.php:14 ../template-sitemap.php:14
+#: ../template-tags.php:14 ../template-timeline.php:14
 msgid ""
 "Apologies, but no results were found for the requested archive. Perhaps "
 "searching will help find a related post."
@@ -223,31 +234,55 @@ msgstr ""
 "Không tìm thấy kết quả. Hãy sử dụng tính năng tìm kiếm để tìm bài viết có "
 "liên quan."
 
-#: ../loop.php:19 ../loop.php:53
+#: ../loop.php:19 ../loop.php:53 ../functions/home-cat-tabs.php:41
+#: ../functions/home-cat-tabs.php:58 ../functions/home-cats.php:48
+#: ../functions/home-cats.php:67 ../functions/home-cats.php:108
+#: ../functions/home-cats.php:127 ../functions/home-cats.php:168
+#: ../functions/home-cats.php:186 ../functions/home-recent-box.php:30
+#: ../includes/post-meta.php:15
 msgid "Leave a comment"
 msgstr "Gửi bình luận"
 
-#: ../loop.php:19 ../loop.php:53
+#: ../loop.php:19 ../loop.php:53 ../functions/home-cat-tabs.php:41
+#: ../functions/home-cat-tabs.php:58 ../functions/home-cats.php:48
+#: ../functions/home-cats.php:67 ../functions/home-cats.php:108
+#: ../functions/home-cats.php:127 ../functions/home-cats.php:168
+#: ../functions/home-cats.php:186 ../functions/home-recent-box.php:30
+#: ../includes/post-meta.php:15
 msgid "1 Comment"
 msgstr "1 bình luận"
 
-#: ../loop.php:19 ../loop.php:53
+#: ../loop.php:19 ../loop.php:53 ../functions/home-cat-tabs.php:41
+#: ../functions/home-cat-tabs.php:58 ../functions/home-cats.php:48
+#: ../functions/home-cats.php:67 ../functions/home-cats.php:108
+#: ../functions/home-cats.php:127 ../functions/home-cats.php:168
+#: ../functions/home-cats.php:186 ../functions/home-recent-box.php:30
+#: ../includes/post-meta.php:15
 msgid "% Comments"
 msgstr "% bình luận"
 
 #: ../loop.php:24 ../loop.php:36 ../loop.php:57
+#: ../functions/home-cat-tabs.php:45 ../functions/home-cats.php:53
+#: ../functions/home-cats.php:113 ../functions/home-cats.php:173
+#: ../functions/home-recent-box.php:35 ../functions/home-recent-box.php:51
 msgid "Read More &raquo;"
 msgstr "Đọc tiếp &raquo;"
 
-#: ../page.php:32
+#: ../page.php:32 ../single.php:43 ../template-authors.php:37
+#: ../template-feed.php:38 ../template-login.php:38
+#: ../template-restrict.php:41 ../template-sitemap.php:38
+#: ../template-tags.php:38 ../template-timeline.php:37
 msgid "Pages:"
 msgstr "Số trang:"
 
-#: ../page.php:34
+#: ../page.php:34 ../single.php:47 ../template-authors.php:84
+#: ../template-feed.php:42 ../template-login.php:40
+#: ../template-restrict.php:46 ../template-sitemap.php:70
+#: ../template-tags.php:50 ../template-timeline.php:75
 msgid "Edit"
 msgstr "Sửa"
 
-#: ../search.php:8
+#: ../search.php:8 ../includes/breadcrumbs.php:83
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Kết quả tìm cho: %s"
@@ -280,7 +315,7 @@ msgstr "Trước:"
 msgid "Next:"
 msgstr "Tiếp:"
 
-#: ../tag.php:7
+#: ../tag.php:7 ../includes/breadcrumbs.php:88
 #, php-format
 msgid "Tag Archives: %s"
 msgstr ""
@@ -297,16 +332,20 @@ msgstr "đã đăng nhập"
 msgid " to view this page."
 msgstr "để xem trang này."
 
-#: ../template-timeline.php:60
+#: ../template-timeline.php:60 ../functions/theme-functions.php:847
+#: ../functions/theme-functions.php:871 ../functions/theme-functions.php:918
+#: ../functions/theme-functions.php:945 ../functions/theme-functions.php:986
+#: ../includes/post-related.php:36 ../includes/post-related.php:42
 #, php-format
 msgid "Permalink to %s"
 msgstr "Chuyển tới %s"
 
-#: ../functions/common-scripts.php:41
+#: ../functions/common-scripts.php:41 ../functions/theme-functions.php:71
 msgid "Go to..."
 msgstr "Chuyển tới..."
 
-#: ../functions/common-scripts.php:42
+#: ../functions/common-scripts.php:42 ../functions/theme-functions.php:1505
+#: ../functions/theme-functions.php:1511
 msgid "Your Rating:"
 msgstr "Bạn đánh giá:"
 
@@ -364,13 +403,14 @@ msgstr "Đăng nhập"
 
 #: ../functions/theme-functions.php:1215
 msgid "Remember Me"
-msgstr "Ghi nhớ tôi"
+msgstr "Duy trì đăng nhập"
 
 #: ../functions/theme-functions.php:1220
 msgid "Lost your password?"
 msgstr "Quên mật khẩu?"
 
 #: ../functions/theme-functions.php:1291
+#: ../includes/widgets/widget-reviews.php:43
 msgid "Review Overview"
 msgstr "Đánh giá chung"
 
@@ -399,6 +439,11 @@ msgstr "Người đọc đánh giá:"
 #: ../functions/theme-functions.php:1554 ../functions/theme-functions.php:1560
 msgid "ago"
 msgstr "trước đây"
+
+#: ../functions/theme-functions.php:1720
+#, php-format
+msgid "Page %s"
+msgstr "Trang %s"
 
 #: ../functions/widgetize-theme.php:13
 msgid "Primary Widget Area"
